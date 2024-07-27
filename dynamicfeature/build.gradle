@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.dynamic-feature'
+}
+android {
+    namespace 'com.example.dynamicfeature'
+    compileSdk 32
+
+    defaultConfig {
+        minSdk 26
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    implementation project(":app")
+}

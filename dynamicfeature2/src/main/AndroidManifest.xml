@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    featureSplit="dynamicfeature2">
+
+  <uses-feature android:name="dynamicfeature" />
+  <dist:module dist:onDemand="false" dist:title="Split APK2">
+    <dist:fusing dist:include="true" />
+  </dist:module>
+  <application>
+  </application>
+</manifest>

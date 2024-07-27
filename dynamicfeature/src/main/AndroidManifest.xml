@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:dist="http://schemas.android.com/apk/distribution"
+    featureSplit="dynamicfeature">
+
+  <uses-feature android:name="base" />
+  <dist:module dist:onDemand="false" dist:title="Split APK">
+    <dist:fusing dist:include="true" />
+  </dist:module>
+  <application>
+    <activity
+        android:name=".MainActivity"
+        android:exported="true"
+        android:label="Isolated Splits Demo">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+    </activity>
+  </application>
+</manifest>
